@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Floorplan</title>
+    <script src="vendor/jquery-1.11.1.min.js"></script>
+    <script src="lib/floorplan.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      var floorplan = new Floorplan("data/floorplan.json");
+      floorplan.render("canvas");
+    </script>
+  </body>
+</html>
