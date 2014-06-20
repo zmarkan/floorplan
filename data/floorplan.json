@@ -1,9 +1,11 @@
 {
   "width": 367,
   "height": 202,
-  "polygons": [
+  "image": "floor2.svg",
+  "objects": [
     {
-      "color": "orange",
+      "type": "floor",
+      "id": "floor-2",
       "points": [
         { "x": 0,   "y": 0   },
         { "x": 367, "y": 0   },
@@ -14,6 +16,35 @@
         { "x": 281, "y": 90  },
         { "x": 0,   "y": 90  }
       ]
+    },
+    {
+      "type": "desk",
+      "id": "desk-0",
+      "points":[
+        {"x":50, "y":50},
+        {"x":60, "y":50},
+        {"x":60, "y":60},
+        {"x":50, "y":60}
+      ]
+    },
+    {
+      "type": "person",
+      "id": "zan",
+      "points":[
+        {"x":20, "y":20}
+      ],
+      "radius": 5
+    },
+    {
+      "type": "desk",
+      "id": "desk-0",
+      "points":[
+        {"x":39, "y":0},
+        {"x":60, "y":0},
+        {"x":60, "y":29},
+        {"x":39, "y":29}
+      ]
     }
+    
   ]
 }
