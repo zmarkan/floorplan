@@ -12,11 +12,26 @@
     </style>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas"
+        style="z-index: 2;
+            position:absolute;
+            left:0px;
+            top:0px">
+    </canvas>
+    <canvas
+        id="canvas_background"
+        style="z-index: 1;
+            position:absolute;
+            left:0px;
+            top:0px">
+    </canvas>
+
+    <button id="clearCanvas" style="z-index:100; position:absolute; left:0px; top:400px">Fucking button </button>
+    <input type=search id=searchbox placeholder=Search!!!!!!!! style="z-index:100; position:absolute; left:0px; top:450px"/>
 
     <script>
-      var floorplan = new Floorplan("data/floorplan.json");
-      floorplan.render("canvas");
+      var floorplan = new Floorplan("data/real_floorplan.json");
+      floorplan.render("canvas_background", "canvas");
     </script>
   </body>
 </html>
